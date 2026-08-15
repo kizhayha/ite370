@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Account Info App</title>
+
+  <!-- Add React and ReactDOM from a CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Add Babel to compile JSX -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <style>
+    :root {
+      --red: #d62828;
+      --red-dark: #a81f1f;
+      --bg: #fafafa;
+      --text: #222;
+      --border: #e5e5e5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- Load the component code (must be run through a local server, e.g. VS Code Live Server) -->
+  <script type="text/babel" src="app.js"></script>
+</body>
+</html>
